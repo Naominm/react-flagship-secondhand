@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+
+.sell-section{
+  margin-top: 20px;
+  background: #FFF;
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+.title{
+  color: #5A301D;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+.pic-section{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 40px;
+    margin-left: 0px;
+    height: 200px;
+    width: 300px;
+    animation: scrolling 10s linear infinite;
+}
+.pic-section img{
+height: 300px;
+width: 400px;
+}
+
+
+@keyframes scrolling {
+0% {
+  transform: translateX(0);
+}
+100% {
+  transform: translateX(-100%);
+}
+}
+
+.scrolling-image {
+margin-right: 30px; /* Adjust the margin as needed */
+}
+
+@media (max-width: 768px) {
+.sell-section{
+  margin-top: 40px;
+  height: auto;
+  
+}
+.title {
+  font-size: 30px; /* Adjusted font size for mobile */
+}
+
+.pic-section {
+  display: flex;
+  flex-direction: row; /* Display images in a column on mobile */
+  gap: 10px; /* Adjusted gap for better mobile appearance */
+  margin-left: 0; /* Removed margin-left for mobile */
+  height: auto; /* Adjusted height to auto for dynamic content */
+  width: 50%; /* Adjusted width to 100% for mobile responsiveness */
+  
+}
+
+.pic-section img {
+  width: 100%; /* Make image width 100% for mobile responsiveness */
+  height: auto; /* Adjusted height to auto for dynamic content */
+}
+
+.scrolling-image {
+  margin-right: 0; /* Removed margin-right for mobile */
+}
+
+}

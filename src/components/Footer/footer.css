@@ -1,0 +1,125 @@
+/* style.css - Import rule at the top */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+
+.footer-container {
+    background-color: #5A301D;
+    color: #FFF;
+    margin-top: 0px;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 40px; */
+    box-sizing: border-box;
+}
+
+.text {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.other {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow-x: hidden;
+    
+   
+}
+
+.plastore-icon {
+    display: flex;
+    align-items: center;
+}
+
+.plastore-icon img {
+    width: 40px;
+    height: 40px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.plastore-icon img:hover{
+    cursor: pointer;
+}
+.plastore-icon span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.social-media img {
+    width: 25px;
+}
+.social-media img:hover{
+    cursor: pointer;
+}
+
+.return-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5A301D;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.return-button img {
+    width: 30px;
+   margin-left: 20px;
+}
+
+.return-button:hover {
+    background-color: #4a2515;
+}
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .footer-container{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .text{
+        font-size: 18px;
+    }
+    .other {
+        flex-direction: column; /* Change to column layout on smaller screens */
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        padding-bottom: 10px;
+    }
+
+    .plastore-icon,
+    .social-media{
+        margin-bottom: 10px; /* Adjusted margin for better spacing on smaller screens */
+    }
+    .plastore-icon span {
+        font-size: 20px;
+    }
+    .return-button {
+        display: none;
+    }
+}

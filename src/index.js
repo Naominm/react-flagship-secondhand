@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Nav from './components/Nav/nav';
+import Hero from './components/Hero/hero'
+import Welcome from './components/Welcome/welcome'
+import Sell from './components/Sell/sell'
+import Footer from './components/Footer/footer'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Nav/>
+    <Hero/>
+    <Welcome/>
+    <Sell/>
+    <Footer/>
   </React.StrictMode>
 );
 

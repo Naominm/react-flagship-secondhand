@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(90, 48, 29, 0.40);;
+    height: 70px;
+    width: full;
+    color: #FFFFFF;
+    margin-top: 0;
+}

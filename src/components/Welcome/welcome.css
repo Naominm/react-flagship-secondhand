@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+
+.welcome-section{
+  background: #fff;
+  margin-top: 80px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  color: #5A301D;
+padding: 20px;
+margin-left: 50px;
+overflow-x: hidden;
+}
+.text-sec{
+  padding-left: 40px;
+  padding-top: 20px;
+  }
+.text-sec span{
+  padding: 2px 20px 0px 40px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.text-sec p{
+  color: rgba(90, 48, 29, 0.60);
+  margin-top: 0;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.text-sec button{
+  margin-top: 60px;
+  padding: 2px 40px 2px 40px;
+  background: #5A301D;
+  color: rgba(255, 255, 255, 1);
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.text-sec button:hover{
+  cursor: pointer;
+}
+
+.check-button img {
+  margin-left: 20px; /* Adjust the margin as needed */
+}
+
+.pic-sec img{
+  height: 400px;
+  width: 500px;
+  margin-right: 50px;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.4));
+  margin-left: 30px;
+margin-top: 20px;
+}
+.sell-section {
+  overflow: hidden;
+}
+
+
+.image-sway {
+  animation: sway 3s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+@keyframes sway {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(2deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.plastore-icon .flex-container {
+  display: flex;
+  align-items: center; 
+}
+@media (max-width: 768px) {
+.welcome-section {
+    gap: 5px;
+    margin-left: 0;
+    height: auto;
+}
+.text-sec{
+  padding-left: 0; /* Remove left padding for mobile */
+  padding-top: 5px;
+}
+
+.text-sec span {
+    font-size: 15px; /* Adjusted font size for mobile */
+}
+
+.text-sec p {
+    font-size: 12px; /* Adjusted font size for mobile */
+}
+
+.text-sec button {
+    margin-top: 30px; /* Adjusted margin-top for better spacing on mobile */
+    padding: 10px 15px; /* Adjusted padding for better mobile appearance */
+    font-size: 8px; /* Adjusted font size for mobile */
+    gap: 5px; /* Adjusted gap for better mobile appearance */
+    height: 30px;
+    width: 150px;
+}
+
+
+.check-button img {
+    margin-left: 5px;
+     width: 5px;
+     height: 5px;
+}
+
+.pic-sec img {
+  width: 100%; /* Make image width 100% for mobile responsiveness */
+  max-width: 100px; /* Set a maximum width for the image on mobile */
+  margin-right: 80px;
+  margin-top: 120px;
+  height: auto; /* Maintain aspect ratio */
+}
+}
