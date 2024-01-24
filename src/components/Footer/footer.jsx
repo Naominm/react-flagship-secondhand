@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="plastore-icon">
           <div className="flex-container">
             <span>Get It on <b> Google Play </b></span>
-            <img src="./images/playstoreIcon.svg" alt="Playstore icon" />
+            <img src="./images/add.jpg" alt="Playstore icon" />
           </div>
         </div>
         <div className="social-media">
