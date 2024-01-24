@@ -2,11 +2,14 @@
 
 .nav-bar{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    background-color: rgba(90, 48, 29, 0.40);;
+    /* justify-content: center; */
+    background: #623917;
     height: 70px;
     width: full;
     color: #FFFFFF;
     margin-top: 0;
+    font-size: 14px;
+    padding-left: 10px;
 }

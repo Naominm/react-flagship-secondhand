@@ -7,63 +7,63 @@ export default function Sell() {
       <div className='title'>Resell with Us Today</div>
       <div className='pic-section'>
         <img
-          src='./images/selling1.svg' 
+          src='./images/vector7.jpg' 
           alt='iphoneX'
           width={800}
           height={100}
           className='scrolling-image'
         />
         <img
-          src='./images/vector15.jpg' 
+          src='./images/vector6.jpg' 
           alt='iphoneX'
           width={800}
           height={100}
           className='scrolling-image'
         />
         <img
-          src='./images/vector7.jpg'
+          src='./images/vector10.jpeg'
           alt='iphoneX'
           width={800}
           height={100}
           className='scrolling-image'
         />
         <img
-          src='./images/vector3.jpg'
+          src='./images/vector13.jpg'
           alt='iphoneX'
           width={800}
           height={100}
           className='scrolling-image'
         />
         <img
-          src='./images/vector8.jpg' 
+          src='./images/vector14.jpeg' 
           alt='iphoneX'
           width={800}
           height={100}
           className='scrolling-image'
         />
         <img
-          src='./images/vector9.jpg'
+          src='./images/vector12.jpg'
           alt='iphoneX'
           width={800}
           height={100}
           className='scrolling-image'
         />
          <img
-          src='./images/vector14.jpg' 
+          src='./images/vector10.jpeg' 
           alt='iphoneX'
           width={800}
           height={100}
           className='scrolling-image'
         />
          <img
-          src='./images/vector13.jpg' 
+          src='./images/vector8.jpeg' 
           alt='iphoneX'
           width={800}
           height={100}
           className='scrolling-image'
         />
          <img
-          src='./images/vector12.jpg' 
+          src='./images/vector7.jpg' 
           alt='iphoneX'
           width={800}
           height={100}

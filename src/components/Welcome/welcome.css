@@ -33,7 +33,7 @@ line-height: normal;
 }
 .text-sec button{
   margin-top: 60px;
-  padding: 10px 40px 10px 40px;
+  padding: 10px 20px 10px 20px;
   background: #4d3023;
   color: rgba(255, 255, 255, 1);
   font-size: 15px;
@@ -42,14 +42,14 @@ line-height: normal;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
+  gap: 3px;
 }
 .text-sec button:hover{
   cursor: pointer;
 }
 
 .red-icon {
-  margin-left: 20px; 
+  margin-left: 5px; 
 
 }
 
