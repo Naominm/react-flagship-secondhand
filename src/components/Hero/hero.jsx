@@ -1,8 +1,9 @@
 import React from 'react';
 import './hero.css'; 
+import { FaAndroid } from "react-icons/fa";
 
-export default function Hero() {
-
+export default function Hero({apkLink }) {
+  
   const redirectToTwitter = () => {
     window.location.href = 'https://twitter.com/';
   };
@@ -32,14 +33,16 @@ export default function Hero() {
           <div className="subheading">
             Sell goods at the comfort of your home
           </div>
-          <div className="playstore-container">
-            <span>Get It on Playstore <b>NOW!</b></span>
-            <img
-              src="/images/add.jpg" 
-              alt="Playstore-icon"
-              className="playstore-icon"
-            />
-          </div>
+          <a className="playstore-container"
+          target='_blank'
+          rel='noopener noreferrer'
+          href={apkLink}
+          >
+            {/* <span>Get It on Playstore <b>NOW!</b></span> */}
+            <p>Get the App</p>
+            <FaAndroid  className='download-icon'/>
+           
+          </a>
         </div>
         <div className="social-container">
           <img

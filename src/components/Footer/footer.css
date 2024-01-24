@@ -38,11 +38,15 @@
     align-items: center;
 }
 
-.plastore-icon img {
-    width: 40px;
-    height: 40px;
+.download-icon {
+   font-size: 60px;
     animation: pulse 2s ease-in-out infinite;
     padding-left: 10px;
+}
+.flex-container p{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0px 15px;
 }
 
 @keyframes pulse {

@@ -5,6 +5,20 @@ import Hero from './components/Hero';
 
 function App() {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
+  const [apkLink, setApkLink] = useState("#");
+  useEffect(()=>{
+    fetch("https://second-hand-goods-backend-2e91c95092aa.herokuapp.com/utilities", {
+            method: "GET",
+
+          }).then(response => response.json())
+            .then(utilities =>{
+            if(utilities && utilities.apk){
+               setApkLink(utilities["apk"])
+            }
+        })
+  }, [])
+
+  
 
   const handleScroll = () => {
     if (window.scrollY > 200) {
@@ -25,8 +39,8 @@ function App() {
 
   return (
     <div className="App">
-      <Footer />
-      <Hero />
+      <Footer apkLink={apkLink} />
+      <Hero apkLink={apkLink}/>
       {showScrollToTop && (
         <div className="scroll-to-top" onClick={scrollToTop}>
           <span>Return to Top</span>

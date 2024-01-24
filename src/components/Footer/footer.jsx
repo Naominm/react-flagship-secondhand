@@ -1,8 +1,8 @@
 import React from 'react';
 import './footer.css';
+import { FaAndroid } from "react-icons/fa";
 
-
-export default function Footer() {
+export default function Footer({apkLink}) {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -25,10 +25,16 @@ export default function Footer() {
       </div>
       <div className="other">
         <div className="plastore-icon">
-          <div className="flex-container">
-            <span>Get It on <b> Google Play </b></span>
-            <img src="./images/add.jpg" alt="Playstore icon" />
-          </div>
+        <a className="flex-container"
+          target='_blank'
+          rel='noopener noreferrer'
+          href={apkLink}
+          >
+            {/* <span>Get It on Playstore <b>NOW!</b></span> */}
+            <p>Get the App</p>
+            <FaAndroid  className='download-icon'/>
+           
+          </a>
         </div>
         <div className="social-media">
           <span><b>Follow us </b></span>
