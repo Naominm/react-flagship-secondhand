@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';  
 import './welcome.css';
 
 export default function Welcome() {
@@ -12,11 +14,14 @@ export default function Welcome() {
           movement with a mission to transform the community.<br/>
           Want to become part of it?
         </p>
-        <button>check us out asap! <img src="./images/guidance_up-arrow.svg" alt="" /> </button>
+        <button>
+      check us out asap!
+      <FontAwesomeIcon className="red-icon" icon={faArrowRightLong} />
+    </button>
       </div>
       <div className="pic-sec">
         <img
-          src="./images/image.svg" // Path to the image in the public folder
+          src="./images/image.svg" 
           alt="iphoneX"
           width={400}
           height={100}

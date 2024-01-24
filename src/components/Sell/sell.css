@@ -28,6 +28,7 @@
 .pic-section img{
 height: 300px;
 width: 400px;
+border-radius: 30px;
 }
 
 
@@ -41,7 +42,7 @@ width: 400px;
 }
 
 .scrolling-image {
-margin-right: 30px; /* Adjust the margin as needed */
+margin-right: 30px; 
 }
 
 @media (max-width: 768px) {
@@ -51,26 +52,26 @@ margin-right: 30px; /* Adjust the margin as needed */
   
 }
 .title {
-  font-size: 30px; /* Adjusted font size for mobile */
+  font-size: 30px;
 }
 
 .pic-section {
   display: flex;
-  flex-direction: row; /* Display images in a column on mobile */
-  gap: 10px; /* Adjusted gap for better mobile appearance */
-  margin-left: 0; /* Removed margin-left for mobile */
-  height: auto; /* Adjusted height to auto for dynamic content */
-  width: 50%; /* Adjusted width to 100% for mobile responsiveness */
+  flex-direction: row; 
+  gap: 10px; 
+  margin-left: 0;
+  height: auto; 
+  width: 50%; 
   
 }
 
 .pic-section img {
-  width: 100%; /* Make image width 100% for mobile responsiveness */
-  height: auto; /* Adjusted height to auto for dynamic content */
+  width: 100%;
+  height: auto;
 }
 
 .scrolling-image {
-  margin-right: 0; /* Removed margin-right for mobile */
+  margin-right: 0; 
 }
 
 }

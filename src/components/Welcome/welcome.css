@@ -33,8 +33,8 @@ line-height: normal;
 }
 .text-sec button{
   margin-top: 60px;
-  padding: 2px 40px 2px 40px;
-  background: #5A301D;
+  padding: 10px 40px 10px 40px;
+  background: #4d3023;
   color: rgba(255, 255, 255, 1);
   font-size: 15px;
   font-weight: bold;
@@ -48,8 +48,9 @@ line-height: normal;
   cursor: pointer;
 }
 
-.check-button img {
-  margin-left: 20px; /* Adjust the margin as needed */
+.red-icon {
+  margin-left: 20px; 
+
 }
 
 .pic-sec img{
@@ -93,39 +94,34 @@ margin-top: 20px;
     height: auto;
 }
 .text-sec{
-  padding-left: 0; /* Remove left padding for mobile */
+  padding-left: 0; 
   padding-top: 5px;
 }
 
 .text-sec span {
-    font-size: 15px; /* Adjusted font size for mobile */
+    font-size: 15px;
 }
 
 .text-sec p {
-    font-size: 12px; /* Adjusted font size for mobile */
+    font-size: 12px;
 }
 
 .text-sec button {
-    margin-top: 30px; /* Adjusted margin-top for better spacing on mobile */
-    padding: 10px 15px; /* Adjusted padding for better mobile appearance */
-    font-size: 8px; /* Adjusted font size for mobile */
-    gap: 5px; /* Adjusted gap for better mobile appearance */
+    margin-top: 30px; 
+    padding: 10px 15px; 
+    font-size: 8px; 
+    gap: 5px; 
     height: 30px;
     width: 150px;
 }
 
 
-.check-button img {
-    margin-left: 5px;
-     width: 5px;
-     height: 5px;
-}
 
 .pic-sec img {
-  width: 100%; /* Make image width 100% for mobile responsiveness */
-  max-width: 100px; /* Set a maximum width for the image on mobile */
+  width: 100%;
+  max-width: 100px;
   margin-right: 80px;
   margin-top: 120px;
-  height: auto; /* Maintain aspect ratio */
+  height: auto; 
 }
 }
