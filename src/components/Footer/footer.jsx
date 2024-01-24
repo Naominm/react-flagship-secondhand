@@ -1,9 +1,21 @@
 import React from 'react';
 import './footer.css';
 
+
 export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  const redirectToTwitter = () => {
+    window.location.href = 'https://twitter.com/';
+  };
+
+  const redirectToLinkedIn = () => {
+    window.location.href = 'https://www.linkedin.com/';
+  };
+
+  const redirectToFacebook = () => {
+    window.location.href = 'https://www.facebook.com/';
   };
 
   return (
@@ -20,9 +32,21 @@ export default function Footer() {
         </div>
         <div className="social-media">
           <span><b>Follow us </b></span>
-          <img src="./images/xicon.svg" alt="Twitter icon" />
-          <img src="./images/linkedinIcon.svg" alt="LinkedIn icon" />
-          <img src="./images/facebookIcon.svg" alt="Facebook icon" />
+          <img 
+          src="./images/xicon.svg" 
+          alt="Twitter icon"
+          onClick={redirectToTwitter}
+          />
+          <img 
+          src="./images/linkedinIcon.svg"
+           alt="LinkedIn icon"
+           onClick={redirectToLinkedIn}
+           />
+          <img
+           src="./images/facebookIcon.svg" 
+           alt="Facebook icon"
+           onClick={redirectToFacebook}
+           />
         </div>
         <div className="return-button" onClick={scrollToTop}>
           <span>Return to top</span>

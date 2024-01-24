@@ -14,14 +14,14 @@ export default function Sell() {
           className='scrolling-image'
         />
         <img
-          src='./images/vector1.jpg' 
+          src='./images/vector15.jpg' 
           alt='iphoneX'
           width={800}
           height={100}
           className='scrolling-image'
         />
         <img
-          src='./images/vector2.jpg'
+          src='./images/vector7.jpg'
           alt='iphoneX'
           width={800}
           height={100}
@@ -35,14 +35,35 @@ export default function Sell() {
           className='scrolling-image'
         />
         <img
-          src='./images/vector4.jpg' 
+          src='./images/vector8.jpg' 
           alt='iphoneX'
           width={800}
           height={100}
           className='scrolling-image'
         />
         <img
-          src='./images/vector5.jpg'
+          src='./images/vector9.jpg'
+          alt='iphoneX'
+          width={800}
+          height={100}
+          className='scrolling-image'
+        />
+         <img
+          src='./images/vector14.jpg' 
+          alt='iphoneX'
+          width={800}
+          height={100}
+          className='scrolling-image'
+        />
+         <img
+          src='./images/vector13.jpg' 
+          alt='iphoneX'
+          width={800}
+          height={100}
+          className='scrolling-image'
+        />
+         <img
+          src='./images/vector12.jpg' 
           alt='iphoneX'
           width={800}
           height={100}

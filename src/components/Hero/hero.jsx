@@ -2,6 +2,18 @@ import React from 'react';
 import './hero.css'; 
 
 export default function Hero() {
+
+  const redirectToTwitter = () => {
+    window.location.href = 'https://twitter.com/';
+  };
+
+  const redirectToLinkedIn = () => {
+    window.location.href = 'https://www.linkedin.com/';
+  };
+
+  const redirectToFacebook = () => {
+    window.location.href = 'https://www.facebook.com/';
+  };
   return (
     <div className='hero-sec'>
       <img
@@ -10,6 +22,7 @@ export default function Hero() {
         width={1200} 
         height={500} 
         className="hero-image"
+      
       />
       <div className="card-container">
         <div className="card">
@@ -33,16 +46,19 @@ export default function Hero() {
             src="/images/xicon.svg" 
             alt="twitter-icon"
             className="social-icon"
+            onClick={redirectToTwitter}
           />
           <img
             src="/images/linkedinIcon.svg" 
             alt="linkedIn-icon"
             className="social-icon"
+            onClick={redirectToLinkedIn}
           />
           <img
             src="/images/facebookIcon.svg" 
             alt="facebook-icon"
             className="social-icon"
+            onClick={redirectToFacebook}
           />
         </div>
       </div>
