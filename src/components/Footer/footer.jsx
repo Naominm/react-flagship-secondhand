@@ -1,11 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './footer.css';
-import { FaAndroid } from "react-icons/fa";
+import { FaAndroid } from 'react-icons/fa';
 
-export default function Footer({apkLink}) {
+export default function Footer() {
+  const [apkLink, setApkLink] = useState("#");
+
+  useEffect(() => {
+    fetch("https://second-hand-goods-backend-2e91c95092aa.herokuapp.com/utilities", {
+      method: "GET",
+    })
+      .then(response => response.json())
+      .then(utilities => {
+        if (utilities && utilities.apk) {
+          setApkLink(utilities.apk);
+        }
+      })
+      .catch(error => {
+        console.error("Error fetching data:", error);
+      });
+  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
   const redirectToTwitter = () => {
     window.location.href = 'https://twitter.com/';
   };
@@ -25,34 +43,32 @@ export default function Footer({apkLink}) {
       </div>
       <div className="other">
         <div className="plastore-icon">
-        <a className="flex-container"
-          target='_blank'
-          rel='noopener noreferrer'
-          href={apkLink}
-          >
-            {/* <span>Get It on Playstore <b>NOW!</b></span> */}
-            <p>Get the App</p>
-            <FaAndroid  className='download-icon'/>
-           
-          </a>
+          {apkLink ? (
+            <a className="flex-container" target='_blank' rel='noopener noreferrer' href={apkLink}>
+              <p>Get the App</p>
+              <FaAndroid className='download-icon'/>
+            </a>
+          ) : (
+            <p>Loading...</p>
+          )}
         </div>
         <div className="social-media">
           <span><b>Follow us </b></span>
           <img 
-          src="./images/xicon.svg" 
-          alt="Twitter icon"
-          onClick={redirectToTwitter}
+            src="./images/xicon.svg" 
+            alt="Twitter icon"
+            onClick={redirectToTwitter}
           />
           <img 
-          src="./images/linkedinIcon.svg"
-           alt="LinkedIn icon"
-           onClick={redirectToLinkedIn}
-           />
+            src="./images/linkedinIcon.svg"
+            alt="LinkedIn icon"
+            onClick={redirectToLinkedIn}
+          />
           <img
-           src="./images/facebookIcon.svg" 
-           alt="Facebook icon"
-           onClick={redirectToFacebook}
-           />
+            src="./images/facebookIcon.svg" 
+            alt="Facebook icon"
+            onClick={redirectToFacebook}
+          />
         </div>
         <div className="return-button" onClick={scrollToTop}>
           <span>Return to top</span>

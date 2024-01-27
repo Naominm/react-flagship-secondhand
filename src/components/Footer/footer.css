@@ -98,6 +98,15 @@
 .return-button:hover {
     background-color: #4a2515;
 }
+a {
+    color: white;
+    text-decoration: none; /* Removes underline */
+  }
+  
+  a:hover {
+    color: #ccc; /* Change color on hover if desired */
+  }
+  
 
 @media (max-width: 768px) {
     .footer-container{
