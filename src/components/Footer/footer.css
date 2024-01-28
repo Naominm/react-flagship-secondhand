@@ -125,14 +125,15 @@ a {
         gap: 30px;
         padding-bottom: 10px;
     }
+    .download-icon{
+        font-size: 40px;
+    }
 
     .plastore-icon,
     .social-media{
         margin-bottom: 10px; 
     }
-    .plastore-icon span {
-        font-size: 20px;
-    }
+   
     .return-button {
         display: none;
     }
