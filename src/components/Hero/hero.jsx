@@ -44,10 +44,12 @@ export default function Hero() {
       <div className="card-container">
         <div className="card">
           <div className="card-heading">
-            Second Hand Resell
+            Second Hand 
           </div>
           <div className="subheading">
-            Sell goods at the comfort of your home
+            {/* Sell and Buy goods at the comfort of your home */}
+            Buy and sell goods effortlessly from home with our app.
+             {/* Download now for seamless transactions and delightful discoveries! */}
           </div>
           {apkLink ? (
             <a
